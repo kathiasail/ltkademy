@@ -1,0 +1,97 @@
+.inscription-container,
+.connexion-container {
+    max-width: 550px;
+    margin: 50px auto;
+    background: #0e0415;
+    padding: 40px 35px;
+    border-radius: 28px;
+    border: 1px solid rgba(244, 114, 182, 0.3);
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+.connexion-container h2,
+.inscription-container h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #d97ead, #e170b4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+.inscription-container label,
+.connexion-container label {
+    display: block;
+    margin: 18px 0 6px 0;
+    font-weight: 500;
+    color: #cbd5e1;
+}
+
+.inscription-container input,
+.connexion-container input {
+    width: 100%;
+    padding: 12px 12px;
+    background: #0e0415;
+    border: 1px solid rgba(244, 114, 182, 0.3);
+    border-radius: 60px;
+    color: #f1f5f9;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+.inscription-container input:focus,
+.connexion-container input:focus {
+    outline: none;
+    border-color: #f472b6;
+}
+
+.inscription-container button,
+.connexion-container button {
+    width: 100%;
+    margin-top: 35px;
+    background: linear-gradient(135deg, #7d1767, #7d1767);
+    border: none;
+    padding: 12px;
+    border-radius: 40px;
+    color: rgb(252, 204, 241);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.inscription-container button:hover,
+.connexion-container button:hover {
+    background: linear-gradient(135deg, #ed96d9, #7b2e67);
+    color: #33142b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.inscription-container .lien,
+.connexion-container .lien {
+    text-align: center;
+    margin-top: 28px;
+    color: #94a3b8;
+}
+
+.inscription-container .lien a,
+.connexion-container .lien a {
+    color: #f472b6;
+    text-decoration: none;
+}
+
+.inscription-container .lien a:hover,
+.connexion-container .lien a:hover {
+    text-decoration: underline;
+}
+.inscription-container input:hover,
+.connexion-container input:hover {
+    border-color: #f472b6;
+    box-shadow: 0 0 8px rgba(244, 114, 182, 0.4);
+    transition: 0.2s;
+}

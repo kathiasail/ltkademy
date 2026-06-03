@@ -1,0 +1,91 @@
+.reservation-container {
+    max-width: 550px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.reservation-container h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #d97ead, #e170b4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+.panier-vide {
+    background: #0e0415;
+    padding: 50px 20px;
+    border-radius: 24px;
+    border: 1px solid #7d1767;
+}
+
+.panier-vide p {
+    margin-bottom: 25px;
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+.panier-liste {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.panier-liste li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0e0415;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(244, 114, 182, 0.3);
+    color: #f1f5f9;
+}
+
+.supprimer-btn {
+    background: transparent;
+    border: none;
+    color: #f472b6;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.supprimer-btn:hover {
+    color: #ff99cc;
+}
+
+.panier-total {
+    text-align: right;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-top: 1px solid rgba(244, 114, 182, 0.3);
+    margin-top: 10px;
+}
+
+.btn-commander {
+    display: inline-block;
+    background: linear-gradient(135deg, #7d1767, #7d1767);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    color: rgb(252, 204, 241);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.btn-commander:hover {
+    background: linear-gradient(135deg, #ed96d9, #7b2e67);
+    color: #33142b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}

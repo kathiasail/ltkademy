@@ -1,0 +1,142 @@
+.formations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 60px 60px 60px;
+}
+
+.formation-card {
+    background: #0e0415;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: 1px solid rgba(244, 114, 182, 0.3);
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.formation-card:hover {
+    transform: translateY(-4px);
+    border-color: #f472b6;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.formation-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.formation-card a {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.formations-header {
+    text-align: left;
+    margin: 50px 0 40px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formations-header h2 {
+    text-align: left;
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #d97ead, #e170b4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding: 0 15px;
+}
+.formation-card p {
+    font-size: 0.8rem;
+    margin: 2px 0;
+}
+.formation-card button {
+    margin: 0 20px 20px 20px;
+    background: linear-gradient(135deg, #7d1767, #7d1767);
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    color: rgb(252, 204, 241);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.formation-card button:hover {
+    background: linear-gradient(135deg, #ed96d9, #7b2e67);
+    color: #33142b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 900px) {
+    .formations-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin: 0 40px 50px 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .formations-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 0 20px 40px 20px;
+    }
+    .formation-card {
+        max-width: 100%;
+    }
+}
+
+.filtres {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 20px 20px 20px;
+}
+
+.filtres button, .sous-filtres button {
+    background: transparent;
+    border: 1px solid rgba(244, 114, 182, 0.4);
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: #cbd5e1;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 0.9rem;
+}
+
+.filtres button:hover, .sous-filtres button:hover {
+    background: rgba(244, 114, 182, 0.15);
+    color: #f472b6;
+    border-color: #f472b6;
+}
+
+.sous-filtres {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 10px 20px 25px 20px;
+}

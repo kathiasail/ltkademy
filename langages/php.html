@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTKademy - PHP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/details.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1><span class="ltk">LTK</span><span class="ademy">ademy</span></h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../formations.html">Formations</a></li>
+            <li><a href="../reservation.html">Réservation</a></li>
+            <li><a href="../inscription.html">Inscription</a></li>
+            <li><a href="../connexion.html">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="intro">
+        <h2>Formation PHP</h2>
+        <p><strong>PHP</strong> est le langage le plus utilisé pour le développement web dynamique (WordPress, Symfony, etc.).</p>
+        <p>Avec PHP, vous créez des sites web interactifs et des applications serveur puissantes.</p>
+    </section>
+
+    <section class="apprentissages">
+        <h3>Ce que tu vas apprendre :</h3>
+        <ul class="details-list">
+            <li>Syntaxe PHP (variables, boucles, fonctions)</li>
+            <li>Manipulation de formulaires et sessions</li>
+            <li>Interaction avec les bases de données (MySQLi, PDO)</li>
+            <li>Création d’un site web dynamique complet</li>
+        </ul>
+    </section>
+
+    <section class="prerequis">
+        <h3>Prérequis :</h3>
+        <p>Connaître les bases de HTML est recommandé.</p>
+    </section>
+
+    <section class="formations">
+        <div class="detail-container">
+            <h3>PHP débutant</h3>
+            <p>Prix : 7000 DA</p>
+            <p>Durée : 6 semaines</p>
+            <p>Programme : installation, syntaxe, variables, formulaires, sessions</p>
+            <button onclick="ajouterAuPanier({nom: 'PHP débutant', prix: 7000})">Réserver</button>
+        </div>
+        <div class="detail-container">
+            <h3>PHP avancé</h3>
+            <p>Prix : 11000 DA</p>
+            <p>Durée : 8 semaines</p>
+            <p>Programme : POO en PHP, MVC, base de données, sécurité, création d’un mini projet</p>
+            <button onclick="ajouterAuPanier({nom: 'PHP avancé', prix: 11000})">Réserver</button>
+        </div>
+    </section>
+
+    <div class="retour-lien">
+        <a href="../formations.html">← Retour aux formations</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 LTKademy - Tous droits réservés</p>
+</footer>
+
+<script src="../javascript/main.js"></script>
+<script src="../javascript/reservation.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTKademy - HTML/CSS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/details.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1><span class="ltk">LTK</span><span class="ademy">ademy</span></h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../formations.html">Formations</a></li>
+            <li><a href="../reservation.html">Réservation</a></li>
+            <li><a href="../inscription.html">Inscription</a></li>
+            <li><a href="../connexion.html">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="intro">
+        <h2>Formation HTML & CSS</h2>
+        <p><strong>HTML</strong> et <strong>CSS</strong> sont les piliers de tout site web. Avec eux, tu peux créer et styler des pages.</p>
+        <p>HTML donne la structure, CSS apporte le style (couleurs, mise en page, animations...).</p>
+    </section>
+
+    <section class="apprentissages">
+        <h3>Ce que tu vas apprendre :</h3>
+        <ul class="details-list">
+            <li>Créer une page HTML propre (titres, paragraphes, images, liens)</li>
+            <li>Appliquer du style CSS (couleurs, polices, espacements)</li>
+            <li>Organiser ta page avec Flexbox et Grid</li>
+            <li>Rendre ton site adaptable aux mobiles (responsive)</li>
+        </ul>
+    </section>
+
+    <section class="prerequis">
+        <h3>Prérequis :</h3>
+        <p>Aucun prérequis technique. Juste un ordinateur et la motivation.</p>
+    </section>
+
+    <section class="formations">
+        <div class="detail-container">
+            <h3>HTML/CSS débutant</h3>
+            <p>Prix : 8000 DA</p>
+            <p>Durée : 8 semaines</p>
+            <p>Programme : structure HTML, balises, attributs, premiers styles CSS</p>
+            <button onclick="ajouterAuPanier({nom: 'HTML/CSS débutant', prix: 8000})">Réserver</button>
+        </div>
+        <div class="detail-container">
+            <h3>HTML/CSS avancé</h3>
+            <p>Prix : 12000 DA</p>
+            <p>Durée : 10 semaines</p>
+            <p>Programme : Flexbox, Grid, animations, responsive design, formulaires stylisés</p>
+            <button onclick="ajouterAuPanier({nom: 'HTML/CSS avancé', prix: 12000})">Réserver</button>
+        </div>
+    </section>
+
+    <div class="retour-lien">
+        <a href="../formations.html">← Retour aux formations</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 LTKademy - Tous droits réservés</p>
+</footer>
+
+<script src="../javascript/main.js"></script>
+<script src="../javascript/reservation.js"></script>
+</body>
+</html>

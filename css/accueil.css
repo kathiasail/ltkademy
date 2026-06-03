@@ -1,0 +1,166 @@
+video {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto;
+    aspect-ratio: 21 / 7; 
+    object-fit: cover; 
+    
+    display: block;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(244, 114, 182, 0.2);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    video {
+        aspect-ratio: 16 / 9; 
+        border-radius: 0; 
+    }
+    .video-title {
+        font-size: 1.4rem;
+    }
+    .video-subtitle {
+        font-size: 0.9rem;
+    }
+}
+
+.video-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 40px 0 10px 0;
+    color: #f3cbf1;
+}
+
+.video-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #b894b6;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+.accueil-texte {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.accueil-texte h2 {
+    font-size: 2.2rem;
+    color: var(--text);
+}
+
+.accueil-texte p {
+    color: var(--text-light);
+}
+
+.accueil-texte .btn {
+    background-color: var(--accent);
+    padding: 12px 30px;
+    border-radius: 14px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.accueil-texte .btn:hover {
+    background-color: var(--accent-hover);
+}
+
+.pourquoi {
+    margin: 60px 20px;
+    text-align: center;
+}
+
+.pourquoi-titre {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #ffffff, #f9cbf8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.pourquoi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.pourquoi-card {
+    background: #0e0415;
+    border-radius: 16px;
+    padding: 24px 16px;
+    text-align: center;
+    transition: 0.2s;
+    border: 1px solid #1e293b;
+}
+
+.pourquoi-card:hover {
+    transform: translateY(-4px);
+    border-color: #f472b6;
+}
+
+.pourquoi-icone svg {
+    stroke: #f472b6;
+    margin-bottom: 16px;
+}
+
+.pourquoi-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #f1f5f9;
+}
+
+.pourquoi-card p {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .pourquoi-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pourquoi-grid {
+        grid-template-columns: 1fr;
+    }
+    .pourquoi-titre {
+        font-size: 1.6rem;
+    }
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 70px 0;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #edb7d3, #f9cbf8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.stat-label {
+    font-size: 0.9999rem;
+    color: var(--text-light);
+}
