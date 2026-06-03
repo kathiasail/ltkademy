@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTKademy - Formations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formations.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>
+            <span class="ltk">LTK</span><span class="ademy">ademy</span>
+        </h1>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="inscription.html">Inscription</a></li>
+            <li><a href="connexion.html">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="formations-header">
+        <h2>Nos formations</h2>
+    </section>
+
+    <section class="filtres">
+        <button id="btnTous">Toutes</button>
+        <button id="btnFrontend">Front-end</button>
+        <button id="btnBackend">Back-end</button>
+    </section>
+
+    <div id="sousFiltresFrontend" style="display: none;" class="sous-filtres">
+        <button class="niveau-btn" data-type="frontend" data-niveau="debutant">Débutant</button>
+        <button class="niveau-btn" data-type="frontend" data-niveau="avance">Avancé</button>
+    </div>
+
+    <div id="sousFiltresBackend" style="display: none;" class="sous-filtres">
+        <button class="niveau-btn" data-type="backend" data-niveau="debutant">Débutant</button>
+        <button class="niveau-btn" data-type="backend" data-niveau="avance">Avancé</button>
+    </div>
+
+    <section class="formations-grid">
+    
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 LTKademy – Tous droits réservés</p>
+</footer>
+
+<script src="javascript/main.js"></script>
+<script src="javascript/reservation.js"></script>
+<script src="javascript/formations.js"></script>
+</body>
+</html>
